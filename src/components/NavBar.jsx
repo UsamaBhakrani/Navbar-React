@@ -5,17 +5,22 @@ import { useState } from "react";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  
+
   return (
     <nav>
       <div className="nav-center">
         <div className="nav-header">
           <img src={logo} alt={logo} />
-          <button className="nav-toggle">
+          <button className="nav-toggle" onClick={() => setIsOpen(!isOpen)}>
             <FaBars />
           </button>
         </div>
-        <div className="links-container show-container">
+
+        <div
+          className={
+            isOpen ? "links-container show-container" : "links-container "
+          }
+        >
           <ul className="links">
             {links.map((link) => {
               return (
