@@ -3,7 +3,19 @@ import { links, social } from "../data";
 import logo from "../logo.svg";
 
 const NavBar = () => {
-  return <h4>navbar</h4>;
+  return (
+    <nav>
+      <div className="nav-center">
+        <div className="nav-header">
+          
+        </div>
+        <div className="links-container show-container"></div>
+        <ul className="social-icons">
+
+        </ul>
+      </div>
+    </nav>
+  );
 };
 
 export default NavBar;
