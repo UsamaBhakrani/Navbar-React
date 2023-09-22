@@ -1,9 +1,8 @@
-import { FaBars, FaTwitter } from "react-icons/fa";
-import { links, social } from "../data";
+import { FaBars } from "react-icons/fa";
 import logo from "../logo.svg";
 import { useState } from "react";
 
-const NavBar = () => {
+const NavBar = ({ links, social }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
