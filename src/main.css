@@ -187,7 +187,7 @@ Variables
     transition: var(--transition);
   }
   .show-container {
-    height: 10rem;
+    height: 14rem;
   }
   @media screen and (min-width: 800px) {
     .nav-center {
